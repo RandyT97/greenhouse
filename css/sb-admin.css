@@ -7,12 +7,31 @@ html {
   position: relative;
   min-height: 100%; }
 
+title2 {
+  font-size: 30px;
+  color: green;
+}
 
+orange {
+  color: orange;
+}
 
+button {
+  width: 300px;
+  height: 300px;
+}
+
+img {
+  width: 100px; // replace with actual width
+  height: 100px; // replace with actual height
+  display: inline-block;
+}
 
 body {
   overflow-x: hidden;
-  padding-left: 240px; }
+  padding-left: 240px;
+  margin-top: 30px;
+}
 
 body.sticky-footer {
   margin-bottom: 56px; }

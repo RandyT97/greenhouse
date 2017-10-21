@@ -7,6 +7,19 @@ html {
   position: relative;
   min-height: 100%; }
 
+h2 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+table {
+  color: white;
+}
+
+
 body {
   overflow-x: hidden;
   padding-left: 240px; }

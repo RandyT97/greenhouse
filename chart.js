@@ -50,3 +50,26 @@ var myLineChart = new Chart(ctx, {
     }
   }
 });
+
+//Pie Chart
+var ctxP = document.getElementById("pieChart").getContext('2d');
+var myPieChart = new Chart(ctxP,
+  {
+    type: 'pie',
+    data:
+    {
+        labels: ["Bills", "Recreation", "Food", "Gas", "Excess"],
+        datasets:
+        [
+            {
+                data: [50, 15, 15, 17, 3],
+                backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+                hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+            }
+        ]
+    },
+    options:
+    {
+        responsive: true
+    }
+});

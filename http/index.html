@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Page level plugin CSS-->
+    <link href="../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="../css/sb-admin.css" rel="stylesheet">
+  </head>
+
+  <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <a class="navbar-brand" href="index.html"><title2>Green House</title2></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+            <a class="nav-link" href="index.html">
+              <i class="fa fa-fw fa-dashboard"></i>
+              <span class="nav-link-text">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+            <a class="nav-link" href="goals.html">
+              <i class="fa fa-fw fa-area-chart"></i>
+              <span class="nav-link-text">Goals</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+            <a class="nav-link" href="rewards.html">
+              <i class="fa fa-fw fa-area-chart"></i>
+              <span class="nav-link-text">Rewards</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+            <a class="nav-link" href="accounts.html">
+              <i class="fa fa-fw fa-area-chart"></i>
+              <span class="nav-link-text">Accounts</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+            <a class="nav-link" href="investments.html">
+              <i class="fa fa-fw fa-area-chart"></i>
+              <span class="nav-link-text">Investments</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav sidenav-toggler">
+          <li class="nav-item">
+            <a class="nav-link text-center" id="sidenavToggler">
+              <i class="fa fa-fw fa-angle-left"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-fw fa-envelope"></i>
+              <span class="d-lg-none">Messages
+                <span class="badge badge-pill badge-primary">12 New</span>
+              </span>
+              <span class="indicator text-primary d-none d-lg-block">
+                <i class="fa fa-fw fa-circle"></i>
+              </span>
+            </a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signin.html" data-toggle="modal" data-target="#exampleModal">
+              <i class="fa fa-fw fa-sign-out"></i>Sign In/Register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+
+    <div class="container">
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-area-chart"></i>Spending Over Time</div>
+        <div class="card-body">
+          <canvas id="myAreaChart" width="100%" height="30"></canvas>
+        </div>
+        <div class="card-footer small text-muted">Updated Today</div>
+      </div>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card mb-3">
+      <div class="card-header">
+        <i class="fa fa-pie-chart"></i>Month of Spending</div>
+      <div class="card-body">
+        <canvas id="pieChart" width="100%" height="100"></canvas>
+      </div>
+      <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+  </div>
+</div>
+
+    <div class="col-sm-6">
+      <div class="card mb-3">
+      <div class="card-header">
+        <i class="fa fa-area-chart"></i>Trending Stocks</div>
+        <div class="panel panel-default">
+        <table class="table" id="stock_table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Ticker</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>MSFT</td>
+              <td>$78.81</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>AAPL</td>
+              <td>$156.25</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>NFLX</td>
+              <td>$194.17</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>FB</td>
+              <td>$174.93</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>TSLA</td>
+              <td>$344.90</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>GPRO</td>
+              <td>$9.42</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>BABA</td>
+              <td>$177.32</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>AMZN</td>
+              <td>$982.91</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>C</td>
+              <td>$73.52</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="card-footer small text-muted">Updated Today</div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+    <script src="../vendor/chart.js/Chart.min.js"></script>
+    <script type="text/javascript" src="../js/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -12,9 +12,27 @@ title2 {
   color: green;
 }
 
+color {
+  color: white;
+}
+
+#login{
+  margin-top:15px;
+  width:70px;
+  height:35px;
+}
+
+#register{
+  margin-top:15px;
+  width:90px;
+  height:35px;
+}
+
 orange {
   color: orange;
 }
+
+
 
 button {
   width: 300px;

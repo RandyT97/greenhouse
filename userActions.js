@@ -65,7 +65,7 @@ function createAccount(nickname, type, customerID) {
         url: baseURL + "customers/" + customerID + "/accounts?key=" + key,
         headers: {
             "Accept":"application/json",
-            "Content-Type":"application/json"            
+            "Content-Type":"application/json"
         },
         data: JSON.stringify(acct),
             dataType: "json",
@@ -86,4 +86,3 @@ function deleteAccount(accountID) {
 // function createDeposit(medium, amount)
 
 //Account Withdrawal
-

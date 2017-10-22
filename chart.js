@@ -18,7 +18,7 @@ var myLineChart = new Chart(ctx, {
       pointHoverBackgroundColor: "rgba(2,117,216,1)",
       pointHitRadius: 20,
       pointBorderWidth: 2,
-      data: [30162, 26263, 18394, 18287, 28682, 31274, 33259, 25849, 24159, 32651, 31984, 38451],
+      data: [],
     }],
   },
   options: {
@@ -50,6 +50,15 @@ var myLineChart = new Chart(ctx, {
     }
   }
 });
+
+var counter = +0;
+for(var i = 0; i <= 11; i++)
+{
+  console.log(myLineChart.data.labels[counter]);
+  myLineChart.data.labels[counter] = 5000;
+  counter++;
+}
+myLineChart.render();
 
 //Pie Chart
 var ctxP = document.getElementById("pieChart").getContext('2d');

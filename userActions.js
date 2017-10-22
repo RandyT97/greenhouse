@@ -19,7 +19,7 @@ function createCustomer(firstName, lastName, streetNum, streetName, city, state,
           }
       }
     $.ajax({
-        url: baseURL + "customers?key=" + key,
+        url: 'http://api.reimaginebanking.com/customers/59ebc981b390353c953a15c1/accounts?key=a67096375bcf4a60ab80d781a3fabcbc',
         headers: {
             "Accept":"application/json",
             "Content-Type":"application/json"

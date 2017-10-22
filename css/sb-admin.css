@@ -32,6 +32,11 @@ orange {
   color: orange;
 }
 
+#add {
+  width:95px;
+  height:35px;
+  margin-top:15px;
+}
 
 
 button {

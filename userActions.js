@@ -1,5 +1,5 @@
 const baseURL = "http://api.reimaginebanking.com/";
-// const customerID = "59eb013da73e4942cdafe3c7";
+//const customerID = "59eb013da73e4942cdafe3c1";
 const key = "a67096375bcf4a60ab80d781a3fabcbc";
 //TODO: Organise get and set, possibly create a global constants js file
 //TODO: Handle response codes
@@ -34,8 +34,8 @@ function createCustomer(firstName, lastName, streetNum, streetName, city, state,
 //Returns customer object given customer id
 function getCustomerByID(customerID) {
     $.ajax({
-        url: baseURL + "customers/" + customerID + "?key=" + key,
-        // url: "http://api.reimaginebanking.com/customers/59eb013da73e4942cdafe3c7?key=a67096375bcf4a60ab80d781a3fabcbc",
+        //url: baseURL + "customers/" + customerID + "?key=" + key,
+         url: "http://api.reimaginebanking.com/customers/59ebc981b390353c953a15c1?key=a67096375bcf4a60ab80d781a3fabcbc",
         success: function(results) {
             //returns an Account Object
             return results;
@@ -49,7 +49,11 @@ function getAcctsbyCustID(customerID) {
         url: baseURL + "customers/" + customerID + "/accounts"+ "?key=" + key,
         //Returns array of accounts
         success: function(results) {
-            return results;
+          console.log('Success');
+          suckABigFatDick(results);
+        },
+        errors: function(xhr, status, error) {
+          console.log("Errored out " + xhr + ", " + status + ", " + error );
         }
     })
 }

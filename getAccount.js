@@ -1,9 +1,5 @@
-
-
-
-
-var id = 0;
-
+var id = '59ebc981b390353c953a15c1';
+console.log(id);
 // Getting the ID from sign in.
 $('#login').click(function()
 {
@@ -11,15 +7,15 @@ $('#login').click(function()
   console.log(id);
 })
 
+getAcctsbyCustID(id);
 
-//var count = +0;
-var custID = getAcctsbyCustID(id);
+function suckABigFatDick(penis) {
+  var accts = penis;
+  console.log(penis);
 
-
-
-for(var i = 0; i < custID.length; i++)
-{
-  var tr = '<tr><td>' + i + '</td><td> ' + custID[i].type + '</td><td> ' + custID[i].rewards + '</td><td> ' + "$" + custID[i].balance + '</td></tr>';
-  $('#table').append(tr);
-  //count = count + 1;
+  for(var i = 0; i < accts.length; i++) {
+    var tr = '<tr><td>' + i + '</td><td> ' + accts[i].type + '</td><td> ' + accts[i].rewards +
+    '</td><td> ' + "$" + accts[i].balance + '</td></tr>';
+    $('#table').append(tr);
+  }
 }

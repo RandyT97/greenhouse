@@ -50,7 +50,7 @@ function getAcctsbyCustID(customerID) {
         //Returns array of accounts
         success: function(results) {
           console.log('Success');
-          suckABigFatDick(results);
+          putChart(results);
         },
         errors: function(xhr, status, error) {
           console.log("Errored out " + xhr + ", " + status + ", " + error );

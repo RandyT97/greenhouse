@@ -83,68 +83,70 @@
   </div>
 
   <div class="container-center">
+
     <div class="col-sm-12">
     <div class="card text-center">
       <h4><div class="card-header">Loyalty Points: <orange>50</orange></div></h4>
+
       <div class="card-body">
-
-        <button class='money_button'>
+        <button type="button" class="btn btn-default btn-sm" data-toggle="buttons">
+          <h4><div class = "container">Cash Back</div></h4>
           <img src="https://image.flaticon.com/icons/svg/189/189093.svg">
-          Cash Back
         </button>
 
-        <button class='concert_button'>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR35hoWzWB4hGWqxfyyphXUyhI8LLM_yHN9niVaX-ov65epqI6h">
-          Concert Tickets
+        <button class='btn btn-default' data-toggle="buttons">
+          <h4><div class = "container">Concert Tickets</div></h4>
+          <img src="http://res.freestockphotos.biz/pictures/4/4332-illustration-of-a-yellow-ticket-pv.png">
         </button>
 
-        <button class='movie_button'>
+        <button class='btn btn-default' data-toggle="buttons">
+          <h4><div class = "container">Movie Tickets</div></h4>
           <img src="http://iconshow.me/media/images/Mixed/small-n-flat-icon/png/512/movie-alt.png">
-          Movie Tickets
         </button>
 
-        <button class='charity_button'>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvjNSr1rwW6z0yCLsmSmLTFgWLczteZ9_G2e6f-nLgRpuh25Sc">
-          Charity
+        <button class='btn btn-default' data-toggle="buttons">
+          <h4><div class = "container">Charity</div></h4>
+          <img src="https://caudwelllymedotnet.files.wordpress.com/2017/05/logo-no-background.png">
         </button>
 
-        <button class='sporting_button'>
-          <img src="http://icons.iconarchive.com/icons/martin-berube/sport/icons-390.jpg">
-          Sporting Tickets
+        <button class='btn btn-default' data-toggle="buttons">
+          <h4><div class = "container">Sports Tickets</div></h4>
+          <img src="http://pngimagesfree.com/Sports/Basketball/thumb/Net-clipart-basketball_hoop.png">
         </button>
 
-        <button class='travel_button'>
+        <button class='btn btn-default' data-toggle="buttons">
+          <h4><div class = "container">Plane Tickets</div></h4>
           <img src="https://cdn0.iconfinder.com/data/icons/travel-volume-1-2/256/08-512.png">
-          Plane Tickets
         </button>
 
       </div>
     </div>
   </div>
-  </div>
+</div>
 
   <div class="container-center">
     <div class="col-sm-12">
     <div class="card text-center">
       <h4><div class="card-header">Loyalty Cards</div></h4>
       <div class="card-body">
-        <div class="slideshow-container">
+        <div class="carousel-container">
+          <!-- Might have something to do with the fade here why they are disappearing.-->
             <div class="mySlides fade">
               <div class="numbertext">1 / 3</div>
-              <img src="https://static.pennypeek.com/products/chickfila-2.jpg" style="width:50%">
-              <div class="text">You have 6 amount of visits left until your next reward!</div>
+              <img src="https://static.pennypeek.com/products/chickfila-2.jpg" style="width:50%"/>
+              <div class="container">You have 6 amount of visits left until your next reward!</div>
             </div>
 
             <div class="mySlides fade">
               <div class="numbertext">2 / 3</div>
-              <img src="https://www1-lw.xda-cdn.com/files/2015/04/wawa-810x298_c.png" style="width:50%">
-              <div class="text">You have 9 amount of visits left until your next reward!</div>
+              <img src="https://www1-lw.xda-cdn.com/files/2015/04/wawa-810x298_c.png" style="width:50%"/>
+              <div class="container">You have 9 amount of visits left until your next reward!</div>
             </div>
 
             <div class="mySlides fade">
               <div class="numbertext">3 / 3</div>
-              <img src="http://logonoid.com/images/panera-bread-logo.png" style="width:50%">
-              <div class="text">You have 3 amount of visits left until your next reward!</div>
+              <img src="http://logonoid.com/images/panera-bread-logo.png" style="width:50%"/>
+              <div class="container">You have 3 amount of visits left until your next reward!</div>
             </div>
             <!--Arrows underneath here(@ line 150-151)-->
             <div style="text-align:left">
@@ -152,7 +154,7 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
           </div>
-          <br>
+
 
           <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
@@ -166,7 +168,7 @@
 
       <script src="../vendor/chart.js/Chart.min.js"></script>
       <script type="text/javascript" src="../js/chart.js"></script>
-      <script type="text/javascript" src="../js/carouseltest.js">
+      <script type="text/javascript" src="../js/carouseltest.js"></script>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>

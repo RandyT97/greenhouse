@@ -50,8 +50,12 @@ color3 {
 }
 
 button {
-  width: 300px;
-  height: 300px;
+  margin-left: 5px;
+  margin-right:5px;
+  margin-top:5px;
+  margin-bottom:5px;
+  width: 200px;
+  height: 160px;
 }
 
 img {

@@ -3,7 +3,8 @@ const baseURL = "http://api.reimaginebanking.com/";
 const key = "a67096375bcf4a60ab80d781a3fabcbc";
 //TODO: Organise get and set, possibly create a global constants js file
 //TODO: Handle response codes
-
+//TODO: Need to have a easy debug code to test the create Customer
+//TODO: Have the url not be string literals
 //Customer Creation
 function createCustomer(firstName, lastName, streetNum, streetName, city, state, zip) {
     var cust = {

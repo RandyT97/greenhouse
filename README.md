@@ -6,7 +6,7 @@
 
 Team Irma Overflow
 
-[Randy Tsui](https://github.com/jawyuhz)
+[Randy Tsui](https://github.com/RandyT97)
 
 [Travis Raghubans](https://github.com/traghubans)
 
